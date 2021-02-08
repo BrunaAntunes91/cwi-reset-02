@@ -1,6 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Olá,mundo! Meu nome é Bruna. Moro em Porto Alegre.Tenho 29 anos e estou adorando aprender a linguagem Java");
+
+        int num1 = 20;
+        int num2 = 10;
+        int restoDiv = num1%num2;
+        System.out.println("O resto de divisão entre 20 e 10 é" +restoDiv);
 
     }
 }

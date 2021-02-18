@@ -18,11 +18,11 @@ public class MinhaCasaMinhaDesgraca {
          *
          * NÃO MODIFICAR ESTA CLASSE ANTES DESTA LINHA.
          */
-        opcoesParaFinanciamento.registrarImovel(new Imovel(new Endereco("Rua Fonseca Ramos",61,"Apto 506", "Medianeira", "Porto Alegre", (UnidadeFederativa.RIO_GRANDE_DO_SUL)),500000));
-        opcoesParaFinanciamento.registrarImovel(new Imovel(new Endereco("Rua Marechal Deodoro", 1020, null, "Centro", "Taquari", (UnidadeFederativa.RIO_GRANDE_DO_SUL)),40000));
-        opcoesParaFinanciamento.registrarImovel(new Imovel(new Endereco("Av Felipe Feliz", 349, "casa 2", "Praia Calma", "Florianópolis", (UnidadeFederativa.SANTA_CATARINA)), 150000));
-        opcoesParaFinanciamento.registrarImovel(new Imovel(new Endereco("Travessa dos Músicos", 49, "apto 1002", "Serenata", "Palmas", (UnidadeFederativa.TOCANTINS)), 890000));
-        opcoesParaFinanciamento.registrarImovel(new Imovel(new Endereco("Av Brasil", 25,"casa A", "Laranjeiras", "Rio de Janeiro", (UnidadeFederativa.RIO_DE_JANEIRO)), 350000));
+        opcoesParaFinanciamento.registrarImovel(new Apartamento(new Endereco("Rua Fonseca Ramos",61,"Apto 506", "Medianeira", "Porto Alegre", (UnidadeFederativa.RIO_GRANDE_DO_SUL)),500000, 5));
+        opcoesParaFinanciamento.registrarImovel(new Casa(new Endereco("Rua Marechal Deodoro", 1020, "", "Centro", "Taquari", (UnidadeFederativa.RIO_GRANDE_DO_SUL)),400000, true));
+        opcoesParaFinanciamento.registrarImovel(new Casa(new Endereco("Av Felipe Feliz", 349, "casa 2", "Praia Calma", "Florianópolis", (UnidadeFederativa.SANTA_CATARINA)), 150000, true));
+        opcoesParaFinanciamento.registrarImovel(new Apartamento(new Endereco("Travessa dos Músicos", 49, "apto 1002", "Serenata", "Palmas", (UnidadeFederativa.TOCANTINS)), 890000, 10));
+        opcoesParaFinanciamento.registrarImovel(new Apartamento(new Endereco("Av Brasil", 25,"AP 406", "Laranjeiras", "Rio de Janeiro", (UnidadeFederativa.RIO_DE_JANEIRO)), 350000, 4));
 
         /**
          * FIM

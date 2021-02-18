@@ -1,4 +1,4 @@
-public class Imovel {
+public abstract class Imovel {
 
 
     private double valor;
@@ -11,8 +11,8 @@ public class Imovel {
     }
     public String apresentacao(){
 
-        return String.format("Imóvel localizado no endereço %s %s %s, %s, %s", endereco.getLogradouro(), endereco.getNumero(),
-                endereco.getComplemento(),endereco.getBairro(), endereco.getCidade(),endereco.getEstado());
+        return String.format("Imóvel localizado no endereço %s %s %s, %s, %s %s no valor de %s", endereco.getLogradouro(), endereco.getNumero(),
+                endereco.getComplemento(),endereco.getBairro(), endereco.getCidade(),endereco.getEstado(), valor);
     }
 
     public Endereco getEndereco() {

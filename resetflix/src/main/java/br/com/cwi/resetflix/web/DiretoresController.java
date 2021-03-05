@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 @RestController
-@RequestMapping("/atores")
+@RequestMapping("/diretores")
 public class DiretoresController  implements DiretoresContract {
 
 

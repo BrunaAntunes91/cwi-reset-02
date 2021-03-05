@@ -1,22 +1,33 @@
-package br.com.cwi.resetflix.request;
+package br.com.cwi.resetflix.entity;
 
 import br.com.cwi.resetflix.domain.Genero;
 
 import java.util.List;
 
-public class CriarSerieRequest {
+public class SerieEntity {
+    private Long id;
     private String nome;
-    private List<Long> idsAtores;
-    private Genero genero;
     private Integer temporadas;
     private Integer episodios;
+    private Genero genero;
+    private List<Long> idsAtores;
 
-    public CriarSerieRequest(String nome, List<Long> idsAtores, Genero genero, Integer temporadas, Integer episodios) {
+
+    public SerieEntity(Long id, String nome, Integer temporadas, Integer episodios, Genero genero, List<Long> idsAtores) {
+        this.id = id;
         this.nome = nome;
-        this.idsAtores = idsAtores;
         this.genero = genero;
         this.temporadas = temporadas;
         this.episodios = episodios;
+        this.idsAtores = idsAtores;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getNome() {
@@ -25,14 +36,6 @@ public class CriarSerieRequest {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public List<Long> getIdsAtores() {
-        return idsAtores;
-    }
-
-    public void setIdsAtores(List<Long> idsAtores) {
-        this.idsAtores = idsAtores;
     }
 
     public Genero getGenero() {
@@ -57,5 +60,13 @@ public class CriarSerieRequest {
 
     public void setEpisodios(Integer episodios) {
         this.episodios = episodios;
+    }
+
+    public List<Long> getIdsAtores() {
+        return idsAtores;
+    }
+
+    public void setIdsAtores(List<Long> idsAtores) {
+        this.idsAtores = idsAtores;
     }
 }
